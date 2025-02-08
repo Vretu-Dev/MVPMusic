@@ -31,7 +31,7 @@ namespace MVPMusic
 
             string MVPMusicDirectory = Path.Combine(MVPDirectoryPath, "MVPMusic");
             if (!Directory.Exists(MVPMusicDirectory))
-                DownloadExampleTimer(MVPMusicDirectory);
+                DownloadMVPMusic(MVPMusicDirectory);
 
             SettingBase.Register(new[] { SettingsHeader });
             MVPMusic.RegisterEvents();
@@ -44,7 +44,7 @@ namespace MVPMusic
             MVPMusic.UnregisterEvents();
             base.OnDisabled();
         }
-        private void DownloadExampleTimer(string MVPMusicDirectory)
+        private void DownloadMVPMusic(string MVPMusicDirectory)
         {
             string MVPZip = MVPMusicDirectory + ".zip";
             string MVPTemp = MVPMusicDirectory + "_Temp";
