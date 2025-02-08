@@ -17,19 +17,19 @@ namespace MVPMusic
         public override Version RequiredExiledVersion { get; } = new Version(9, 4, 0);
         public override PluginPriority Priority { get; } = PluginPriority.Low;
         public static Main Instance { get; private set; }
-        public static string MVPDirectoryPath { get; } = Path.Combine(Paths.Configs, "Audio");
+        public static string AudioDirectoryPath { get; } = Path.Combine(Paths.Configs, "Audio");
         public HeaderSetting SettingsHeader { get; set; } = new HeaderSetting("MVP MUSIC");
         public override void OnEnabled()
         {
             Instance = this;
 
-            if (!Directory.Exists(MVPDirectoryPath))
+            if (!Directory.Exists(AudioDirectoryPath))
             {
-                Log.Warn("MVPMusic directory does not exist. Creating...");
-                Directory.CreateDirectory(MVPDirectoryPath);
+                Log.Warn("Audio directory does not exist. Creating...");
+                Directory.CreateDirectory(AudioDirectoryPath);
             }
 
-            string MVPMusicDirectory = Path.Combine(MVPDirectoryPath, "MVPMusic");
+            string MVPMusicDirectory = Path.Combine(AudioDirectoryPath, "MVPMusic");
             if (!Directory.Exists(MVPMusicDirectory))
                 DownloadMVPMusic(MVPMusicDirectory);
 
@@ -46,24 +46,24 @@ namespace MVPMusic
         }
         private void DownloadMVPMusic(string MVPMusicDirectory)
         {
-            string MVPZip = MVPMusicDirectory + ".zip";
-            string MVPTemp = MVPMusicDirectory + "_Temp";
+            string MVPMusicZip = MVPMusicDirectory + ".zip";
+            string MVPMusicTemp = MVPMusicDirectory + "_Temp";
 
             using WebClient client = new();
 
             Log.Warn("Downloading MVPMusic.zip...");
             client.DownloadFile(
-                $"https://github.com/Vretu-Dev/MVPMusic/releases/download/v{Version}/MVPMusic.zip",
-                MVPZip);
+                $"https://github.com/Vretu-Dev/MVPMusic/releases/download/{Version}/MVPMusic.zip",
+                MVPMusicZip);
 
-            Log.Info("ExampleTimer.zip has been downloaded!");
+            Log.Info("MVPMusic.zip has been downloaded!");
 
             Log.Warn("Extracting...");
-            ZipFile.ExtractToDirectory(MVPZip, MVPTemp);
-            Directory.Move(Path.Combine(MVPTemp, "MVPMusic"), MVPTemp);
+            ZipFile.ExtractToDirectory(MVPMusicZip, MVPMusicTemp);
+            Directory.Move(Path.Combine(MVPMusicTemp, "MVPMusic"), MVPMusicDirectory);
 
-            Directory.Delete(MVPTemp);
-            File.Delete(MVPZip);
+            Directory.Delete(MVPMusicTemp);
+            File.Delete(MVPMusicZip);
 
             Log.Info("Done!");
         }
