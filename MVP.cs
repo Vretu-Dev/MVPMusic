@@ -17,9 +17,11 @@ namespace MVPMusic
         private static Dictionary<Player, float> humanDamage = new Dictionary<Player, float>();
         public static readonly Dictionary<string, string> MusicMapping = new Dictionary<string, string>
         {
-            { "Music A", "https://status.dreamserwer.pl/test.ogg" },
-            { "Music B", "https://myawesomewebserver.net/files/audio2.ogg" },
-            { "Music C", "https://myawesomewebserver.net/files/audio3.ogg" }
+            { "All for Dust", "All-for-Dust.ogg" },
+            { "Bachram", "Bachram.ogg" },
+            { "Desert Fire", "Desert-Fire.ogg" },
+            { "Mocha Petal", "Mocha-Petal.ogg" },
+            { "I Am By AWOLNATION", "I-Am-By-AWOLNATION.ogg" }
         };
         private static Player firstEscaper = null;
         private static Player firstScpKiller = null;
