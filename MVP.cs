@@ -218,7 +218,8 @@ namespace MVPMusic
             if (mvpPlayer != null)
             {
                 string musicUrl = GetMusicUrlFromPlayer(mvpPlayer);
-                string command = $"/audio play {musicUrl} {mvpPlayer.Nickname}";
+                string botName = Main.Instance.Config.BotName.Replace("{Nickname}", mvpPlayer.Nickname).Replace(" ", "\u00A0");
+                string command = $"/audio play {musicUrl} {botName}";
                 Server.ExecuteCommand(command);
             }
         }
