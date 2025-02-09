@@ -15,5 +15,7 @@ namespace MVPMusic
         public string BotName { get; set; } = "Round MVP: {Nickname}";
         [Description("UserSettings ID")]
         public int MusicDropdownId { get; set; } = 101;
+        [Description("Additional music list in the format: 'DisplaySongName': 'Path'. For example, 'TakeMeOut': 'MVPMusic/takemeout.ogg'.")]
+        public Dictionary<string, string> MusicList { get; set; } = new Dictionary<string, string>();
     }
 }

@@ -100,6 +100,17 @@ namespace MVPMusic
 
         public static void RegisterEvents()
         {
+            if (Main.Instance.Config.MusicList != null)
+            {
+                foreach (var kv in Main.Instance.Config.MusicList)
+                {
+                    if (!MusicMapping.ContainsKey(kv.Key))
+                    {
+                        MusicMapping.Add(kv.Key, kv.Value);
+                    }
+                }
+            }
+
             MusicDropdownSetting = new DropdownSetting(
             id: Main.Instance.Config.MusicDropdownId,
             label: "Choose music",
