@@ -35,7 +35,7 @@ MVPMusic:
   is_enabled: true
   debug: false
   # MVP selection method. Options available: FirstEscaper, FirstScpKiller, TopKiller, TopDamageDealer.
-  mvp: 'TopKiller'
+  mvp: 'FirstEscaper'
   # Set Bot Nickname at the end of the round.
   bot_name: 'Round MVP: {Nickname}'
   # UserSettings ID
