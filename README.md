@@ -35,7 +35,11 @@ MVPMusic:
   is_enabled: true
   debug: false
   # MVP selection method. Options available: FirstEscaper, FirstScpKiller, TopKiller, TopDamageDealer.
-  mvp: 'FirstEscaper'
+  mvp: 'TopKiller'
+  # Set Bot Nickname at the end of the round.
+  bot_name: 'Round MVP: {Nickname}'
   # UserSettings ID
   music_dropdown_id: 101
+  # Additional music list in the format: 'DisplaySongName': 'Path'. For example, 'TakeMeOut': 'MVPMusic/takemeout.ogg'.
+  music_list: {}
 ```
