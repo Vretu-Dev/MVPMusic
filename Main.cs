@@ -8,12 +8,12 @@ using Exiled.API.Features.Core.UserSettings;
 
 namespace MVPMusic
 {
-    public class Main : Plugin<Config>
+    public class Main : Plugin<Config, Translation>
     {
         public override string Name => "MVPMusic";
         public override string Author => "Vretu";
         public override string Prefix { get; } = "MVPMusic";
-        public override Version Version => new Version(1, 1, 0);
+        public override Version Version => new Version(1, 2, 0);
         public override Version RequiredExiledVersion { get; } = new Version(9, 4, 0);
         public override PluginPriority Priority { get; } = PluginPriority.Low;
         public static Main Instance { get; private set; }

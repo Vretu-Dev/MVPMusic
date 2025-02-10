@@ -16,6 +16,10 @@ namespace MVPMusic
         [Description("UserSettings ID")]
         public int MusicDropdownId { get; set; } = 101;
         [Description("Additional music list in the format: 'DisplaySongName': 'Path'. For example, 'TakeMeOut': 'MVPMusic/takemeout.ogg'.")]
-        public Dictionary<string, string> MusicList { get; set; } = new Dictionary<string, string>();
+        public Dictionary<string, string> MusicList { get; set; } = new Dictionary<string, string>
+        {
+            { "Example Music", "MVPMusic/example.ogg" },
+            { "Another Example Music", "MVPMusic/example2.ogg" }
+        };
     }
 }

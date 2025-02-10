@@ -104,6 +104,10 @@ namespace MVPMusic
             {
                 foreach (var kv in Main.Instance.Config.MusicList)
                 {
+                    if ((kv.Key == "Example Music" && kv.Value == "MVPMusic/example.ogg") || (kv.Key == "Another Example Music" && kv.Value == "MVPMusic/example2.ogg"))
+                    {
+                        continue;
+                    }
                     if (!MusicMapping.ContainsKey(kv.Key))
                     {
                         MusicMapping.Add(kv.Key, kv.Value);
@@ -113,11 +117,11 @@ namespace MVPMusic
 
             MusicDropdownSetting = new DropdownSetting(
             id: Main.Instance.Config.MusicDropdownId,
-            label: "Choose music",
+            label: Main.Instance.Translation.SettingLabel,
             options: MusicMapping.Keys.Cast<string>().ToArray(),
             defaultOptionIndex: 0,
             dropdownEntryType: SSDropdownSetting.DropdownEntryType.Regular,
-            hintDescription: "Select the song that will be played at the end of the round.",
+            hintDescription: Main.Instance.Translation.HintDescription,
             onChanged: (player, setting) =>
             {
                 string friendlyName = (setting as DropdownSetting)?.SelectedOption;
