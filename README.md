@@ -41,5 +41,7 @@ MVPMusic:
   # UserSettings ID
   music_dropdown_id: 101
   # Additional music list in the format: 'DisplaySongName': 'Path'. For example, 'TakeMeOut': 'MVPMusic/takemeout.ogg'.
-  music_list: {}
+  music_list:
+    Example Music: MVPMusic/example.ogg
+    Another Example Music: MVPMusic/example2.ogg
 ```
