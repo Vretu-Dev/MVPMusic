@@ -302,11 +302,21 @@ namespace MVPMusic
             int dropdownId = Main.Instance.Config.MusicDropdownId;
             if (SettingBase.TryGetSetting<DropdownSetting>(player, dropdownId, out DropdownSetting setting))
             {
+                if (setting.OriginalDefinition == null)
+                {
+                    if (MusicMapping.TryGetValue("All for Dust", out string fallbackUrl))
+                        return fallbackUrl;
+                }
+
                 string friendlyName = setting.SelectedOption;
                 if (MusicMapping.TryGetValue(friendlyName, out string actualUrl))
                     return actualUrl;
             }
-            return string.Empty;
+            if (MusicMapping.TryGetValue("All for Dust", out string defaultUrl))
+            {
+                return defaultUrl;
+            }
+            return "MVPMusic/All-for-Dust.ogg";
         }
     }
 }
