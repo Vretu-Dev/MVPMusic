@@ -233,7 +233,7 @@ namespace MVPMusic
             if (mvpPlayer != null)
             {
                 string musicUrl = GetMusicUrlFromPlayer(mvpPlayer);
-                string botName = Main.Instance.Config.BotName.Replace("{Nickname}", mvpPlayer.Nickname).Replace(" ", "\u00A0");
+                string botName = Main.Instance.Config.BotName.Replace("{Nickname}", mvpPlayer.Nickname);
                 string command = $"/audio play {musicUrl} {botName}";
                 Server.ExecuteCommand(command);
             }
@@ -302,7 +302,11 @@ namespace MVPMusic
             int dropdownId = Main.Instance.Config.MusicDropdownId;
             if (SettingBase.TryGetSetting<DropdownSetting>(player, dropdownId, out DropdownSetting setting))
             {
+                if (setting.OriginalDefinition == null)
+                    return string.Empty;
+
                 string friendlyName = setting.SelectedOption;
+
                 if (MusicMapping.TryGetValue(friendlyName, out string actualUrl))
                     return actualUrl;
             }

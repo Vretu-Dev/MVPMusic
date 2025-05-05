@@ -1,4 +1,5 @@
 # MVPMusic Plugin
+![downloads](https://img.shields.io/github/downloads/Vretu-Dev/MVPMusic/total)
 
 MVPMusic is a plugin designed for **SCP: Secret Laboratory** that allows you to manage and play music from external sources on the server. The plugin enables synchronization of music selection with player settings and automatic downloading of music files from a GitHub repository.
 
@@ -21,7 +22,7 @@ MVPMusic is a plugin designed for **SCP: Secret Laboratory** that allows you to 
    - Set MVP selection method
 
 3. **Requirements**:
-   - [AudioPlayer](https://github.com/Antoniofo/AudioPlayer/releases/download/v2.3.0/AudioPlayer.dll)
+   - [AudioPlayer](https://github.com/Antoniofo/AudioPlayer/releases/download/v2.3.2/AudioPlayer.dll)
    - [SCPSLAudioApi](https://github.com/CedModV2/SCPSLAudioApi/releases/download/0.0.8/SCPSLAudioApi.dll)
 ---
 
