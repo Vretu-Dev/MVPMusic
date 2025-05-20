@@ -13,8 +13,8 @@ namespace MVPMusic
         public override string Name => "MVPMusic";
         public override string Author => "Vretu";
         public override string Prefix { get; } = "MVPMusic";
-        public override Version Version => new Version(1, 3, 0);
-        public override Version RequiredExiledVersion { get; } = new Version(9, 4, 0);
+        public override Version Version => new Version(1, 4, 0);
+        public override Version RequiredExiledVersion { get; } = new Version(9, 6, 0);
         public override PluginPriority Priority { get; } = PluginPriority.Low;
         public static Main Instance { get; private set; }
         public static string AudioDirectoryPath { get; } = Path.Combine(Paths.Configs, "audio");

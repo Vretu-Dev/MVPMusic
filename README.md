@@ -22,7 +22,7 @@ MVPMusic is a plugin designed for **SCP: Secret Laboratory** that allows you to 
    - Set MVP selection method
 
 3. **Requirements**:
-   - [AudioPlayer](https://github.com/Antoniofo/AudioPlayer/releases/download/v2.3.2/AudioPlayer.dll)
+   - [AudioPlayer](https://github.com/Antoniofo/AudioPlayer/releases/download/v2.4.0/AudioPlayer.dll)
    - [SCPSLAudioApi](https://github.com/CedModV2/SCPSLAudioApi/releases/download/0.0.8/SCPSLAudioApi.dll)
 ---
 
