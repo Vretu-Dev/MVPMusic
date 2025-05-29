@@ -1,35 +1,23 @@
-# MVPMusic Plugin
-![downloads](https://img.shields.io/github/downloads/Vretu-Dev/MVPMusic/total)
+![MVPMusic](https://github.com/user-attachments/assets/ec7fffb0-1fb5-422a-8e42-7e9b90df4f39)<br><br><br>
+[![downloads](https://img.shields.io/github/downloads/Vretu-Dev/MVPMusic/total?style=for-the-badge&logo=icloud&color=%233A6D8C)](https://github.com/Vretu-Dev/MVPMusic/releases/latest)
+![Latest](https://img.shields.io/github/v/release/Vretu-Dev/MVPMusic?style=for-the-badge&label=Latest%20Release&color=%23D91656)
 
-MVPMusic is a plugin designed for **SCP: Secret Laboratory** that allows you to manage and play music from external sources on the server. The plugin enables synchronization of music selection with player settings and automatic downloading of music files from a GitHub repository.
+## Downloads:
+| Framework | Version    |  Release                                                              |
+|:---------:|:----------:|:----------------------------------------------------------------------:|
+| Exiled    | ≥ 9.6.0    | [⬇️](https://github.com/Vretu-Dev/MVPMusic/releases/latest)        |
 
----
-
-## ✨ Features
-
+## Features
 - **Music Download**: Automatically download music files from GitHub.
 - **Dynamic Music Change**: Players can choose tracks from an available list.
 - **Supports `DropdownSetting`**: Players can change their music selection via a dropdown menu.
 - **Contain All MVP Music**: (https://www.youtube.com/watch?v=NqDtEO2Smaw)
----
 
-## 🛠️ Installation
+## Requirements:
+   - [AudioPlayer](https://github.com/Antoniofo/AudioPlayer/releases/latest)
+   - [SCPSLAudioApi](https://github.com/CedModV2/SCPSLAudioApi/releases/latest)
 
-1. **Download the Plugin**:
-   - Copy the `.dll` plugin file to the `plugins` folder of your SCP:SL installation.
-
-2. **Configuration**:
-   - Set MVP selection method
-
-3. **Requirements**:
-   - [AudioPlayer](https://github.com/Antoniofo/AudioPlayer/releases/download/v2.4.0/AudioPlayer.dll)
-   - [SCPSLAudioApi](https://github.com/CedModV2/SCPSLAudioApi/releases/download/0.0.8/SCPSLAudioApi.dll)
----
-
-## ⚙️ Configuration
-
-In the configuration file, you can adjust the following settings:
-
+## Config:
 ```yaml
 MVPMusic:
 # Whether the plugin is enabled.
