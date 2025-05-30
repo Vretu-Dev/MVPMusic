@@ -15,22 +15,22 @@
 
 ## Requirements:
    - [AudioPlayer](https://github.com/Antoniofo/AudioPlayer/releases/latest)
-   - [SCPSLAudioApi](https://github.com/CedModV2/SCPSLAudioApi/releases/latest)
+   - [AudioPlayerApi](https://github.com/Killers0992/AudioPlayerApi/releases/latest)
 
 ## Config:
 ```yaml
 MVPMusic:
-# Whether the plugin is enabled.
+  # Whether the plugin is enabled.
   is_enabled: true
   debug: false
   # MVP selection method. Options available: FirstEscaper, FirstScpKiller, TopKiller, TopDamageDealer.
   mvp: 'FirstEscaper'
   # Set Bot Nickname at the end of the round.
-  bot_name: 'Round MVP: {Nickname}'
+  mvphint: '<size=35><b><color=yellow>Round MVP:<color=#70EE9C>{Nickname}</color> as <color=red>{Scenario}</color></color></b></size>'
   # UserSettings ID
   music_dropdown_id: 101
-  # Additional music list in the format: 'DisplaySongName': 'Path'. For example, 'TakeMeOut': 'MVPMusic/takemeout.ogg'.
+  # Additional music list in the format: 'DisplaySongName': 'Path'. For example, 'TakeMeOut': 'MVPMusic/takemeout'.
   music_list:
-    Example Music: MVPMusic/example.ogg
-    Another Example Music: MVPMusic/example2.ogg
+    Example Music: MVPMusic/example
+    Another Example Music: MVPMusic/example2
 ```
