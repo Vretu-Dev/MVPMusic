@@ -17,82 +17,82 @@ namespace MVPMusic
         private static Dictionary<Player, float> humanDamage = new Dictionary<Player, float>();
         public static readonly Dictionary<string, string> MusicMapping = new Dictionary<string, string>
         {
-            { "All for Dust", "MVPMusic/All-for-Dust.ogg" },
-            { "Bachram", "MVPMusic/Bachram.ogg" },
-            { "Desert Fire", "MVPMusic/Desert-Fire.ogg" },
-            { "Mocha Petal", "MVPMusic/Mocha-Petal.ogg" },
-            { "I Am By AWOLNATION", "MVPMusic/I-Am-By-AWOLNATION.ogg" },
-            { "u mad!", "MVPMusic/u-mad.ogg" },
-            { "Aggressive", "MVPMusic/Aggressive.ogg" },
-            { "Disgusting", "MVPMusic/Disgusting.ogg" },
-            { "The Good Youth", "MVPMusic/The-Good-Youth.ogg" },
-            { "Yellow Magic", "MVPMusic/Yellow-Magic.ogg" },
-            { "The Talos Principle", "MVPMusic/The-Talos-Principle.ogg" },
-            { "Crimson Assault", "MVPMusic/Crimson-Assault.ogg" },
-            { "Eye of the Dragon", "MVPMusic/Eye-of-the-Dragon.ogg" },
-            { "Total Domination", "MVPMusic/Total-Domination.ogg" },
-            { "The 8-Bit Kit", "MVPMusic/The-8-Bit-Kit.ogg" },
-            { "Moments CSGO", "MVPMusic/Moments-CSGO.ogg" },
-            { "ULTIMATE", "MVPMusic/ULTIMATE.ogg" },
-            { "Death's Head Demolition", "MVPMusic/Deaths-Head-Demolition.ogg" },
-            { "Gunman Taco", "MVPMusic/Gunman-Taco.ogg" },
-            { "Feel The Power", "MVPMusic/Feel-ThePower.ogg" },
-            { "High Noon", "MVPMusic/High-Noon.ogg" },
-            { "Vici", "MVPMusic/Vici.ogg" },
-            { "Void", "MVPMusic/Void.ogg" },
-            { "FREE", "MVPMusic/FREE.ogg" },
-            { "Lion's Mouth", "MVPMusic/Lions-Mouth.ogg" },
-            { "inhuman", "MVPMusic/inhuman.ogg" },
-            { "Astro Bellum", "MVPMusic/Astro-Bellum.ogg" },
-            { "Shooters", "MVPMusic/Shooters.ogg" },
-            { "Hazardous Environments", "MVPMusic/Hazardous-Environments.ogg" },
-            { "All Night", "MVPMusic/All-Night.ogg" },
-            { "Heading for the Source", "MVPMusic/Heading-for-the-Source.ogg" },
-            { "MOLOTOV", "MVPMusic/MOLOTOV.ogg" },
-            { "Make U SWEAT!", "MVPMusic/Make-U-SWEAT.ogg" },
-            { "dashstar", "MVPMusic/dashstar.ogg" },
-            { "Work Hard, Play Hard", "MVPMusic/Work-Hard.ogg" },
-            { "Java Havana", "MVPMusic/Java-Havana.ogg" },
-            { "For No Mankind", "MVPMusic/For-No-Mankind.ogg" },
-            { "IsoRhythm", "MVPMusic/IsoRhythm.ogg" },
-            { "Drifter", "MVPMusic/Drifter.ogg" },
-            { "Gothic Luxury", "MVPMusic/Gothic-Luxury.ogg" },
-            { "Invasion!", "MVPMusic/Invasion.ogg" },
-            { "All I Want for Christmas", "MVPMusic/All-I-Want-for-Christmas.ogg" },
-            { "Diamonds", "MVPMusic/Diamonds.ogg" },
-            { "Life's Not Out To Get You", "MVPMusic/Lifes-Not-Out-To-Get-You.ogg" },
-            { "The Lowlife Pack", "MVPMusic/The-Lowlife-Pack.ogg" },
-            { "Sponge Fingerz", "MVPMusic/Sponge-Fingerz.ogg" },
-            { "Sharpened", "MVPMusic/Sharpened.ogg" },
-            { "Hua Lian", "MVPMusic/Hua-Lian.ogg" },
-            { "Battlepack", "MVPMusic/Battlepack.ogg" },
-            { "Reason", "MVPMusic/Reason.ogg" },
-            { "Backbone", "MVPMusic/Backbone.ogg" },
-            { "Insurgency", "MVPMusic/Insurgency.ogg" },
-            { "Bodacious", "MVPMusic/Bodacious.ogg" },
-            { "KOLIBRI", "MVPMusic/KOLIBRI.ogg" },
-            { "LNOE", "MVPMusic/Hua-Lian.ogg" },
-            { "CHAIN$AW.LXADXUT.", "MVPMusic/chain.ogg" },
-            { "King, Scar", "MVPMusic/King-Scar.ogg" },
-            { "A*D*8", "MVPMusic/AD8.ogg" },
-            { "Metal", "MVPMusic/Metal.ogg" },
-            { "II-Headshot", "MVPMusic/II-Headshot.ogg" },
-            { "III-Arena", "MVPMusic/III-Arena.ogg" },
-            { "Lock Me Up", "MVPMusic/Lock-Me-Up.ogg" },
-            { "EZ4ENCE", "MVPMusic/EZ4ENCE.ogg" },
-            { "Flashbang Dance", "MVPMusic/Flashbang-Dance.ogg" },
-            { "Neo Noir", "MVPMusic/Neo-Noir.ogg" },
-            { "M.U.D.D. FORCE", "MVPMusic/MUDD-FORCE.ogg" },
-            { "Uber Blasto Phone", "MVPMusic/Uber-Blasto-Phone.ogg" },
-            { "Under Bright Lights", "MVPMusic/Under-Bright-Lights.ogg" },
-            { "GLA", "MVPMusic/GLA.ogg" },
-            { "Hotline Miami", "MVPMusic/Hotline-Miami.ogg" },
-            { "Hades", "MVPMusic/Hades.ogg" },
-            { "Anti-Citizen", "MVPMusic/Anti-Citizen.ogg" },
-            { "The Master Chief", "MVPMusic/The-Master-Chief.ogg" },
-            { "Default CS:GO First", "MVPMusic/Default-CSGO.ogg" },
-            { "Default CS:GO Second", "MVPMusic/Default2-CSGO.ogg" },
-            { "Default CS:GO 2", "MVPMusic/Default-CSGO2.ogg" }
+            { "All for Dust", "MVPMusic/All-for-Dust" },
+            { "Bachram", "MVPMusic/Bachram" },
+            { "Desert Fire", "MVPMusic/Desert-Fire" },
+            { "Mocha Petal", "MVPMusic/Mocha-Petal" },
+            { "I Am By AWOLNATION", "MVPMusic/I-Am-By-AWOLNATION" },
+            { "u mad!", "MVPMusic/u-mad" },
+            { "Aggressive", "MVPMusic/Aggressive" },
+            { "Disgusting", "MVPMusic/Disgusting" },
+            { "The Good Youth", "MVPMusic/The-Good-Youth" },
+            { "Yellow Magic", "MVPMusic/Yellow-Magic" },
+            { "The Talos Principle", "MVPMusic/The-Talos-Principle" },
+            { "Crimson Assault", "MVPMusic/Crimson-Assault" },
+            { "Eye of the Dragon", "MVPMusic/Eye-of-the-Dragon" },
+            { "Total Domination", "MVPMusic/Total-Domination" },
+            { "The 8-Bit Kit", "MVPMusic/The-8-Bit-Kit" },
+            { "Moments CSGO", "MVPMusic/Moments-CSGO" },
+            { "ULTIMATE", "MVPMusic/ULTIMATE" },
+            { "Death's Head Demolition", "MVPMusic/Deaths-Head-Demolition" },
+            { "Gunman Taco", "MVPMusic/Gunman-Taco" },
+            { "Feel The Power", "MVPMusic/Feel-ThePower" },
+            { "High Noon", "MVPMusic/High-Noon" },
+            { "Vici", "MVPMusic/Vici" },
+            { "Void", "MVPMusic/Void" },
+            { "FREE", "MVPMusic/FREE" },
+            { "Lion's Mouth", "MVPMusic/Lions-Mouth" },
+            { "inhuman", "MVPMusic/inhuman" },
+            { "Astro Bellum", "MVPMusic/Astro-Bellum" },
+            { "Shooters", "MVPMusic/Shooters" },
+            { "Hazardous Environments", "MVPMusic/Hazardous-Environments" },
+            { "All Night", "MVPMusic/All-Night" },
+            { "Heading for the Source", "MVPMusic/Heading-for-the-Source" },
+            { "MOLOTOV", "MVPMusic/MOLOTOV" },
+            { "Make U SWEAT!", "MVPMusic/Make-U-SWEAT" },
+            { "dashstar", "MVPMusic/dashstar" },
+            { "Work Hard, Play Hard", "MVPMusic/Work-Hard" },
+            { "Java Havana", "MVPMusic/Java-Havana" },
+            { "For No Mankind", "MVPMusic/For-No-Mankind" },
+            { "IsoRhythm", "MVPMusic/IsoRhythm" },
+            { "Drifter", "MVPMusic/Drifter" },
+            { "Gothic Luxury", "MVPMusic/Gothic-Luxury" },
+            { "Invasion!", "MVPMusic/Invasion" },
+            { "All I Want for Christmas", "MVPMusic/All-I-Want-for-Christmas" },
+            { "Diamonds", "MVPMusic/Diamonds" },
+            { "Life's Not Out To Get You", "MVPMusic/Lifes-Not-Out-To-Get-You" },
+            { "The Lowlife Pack", "MVPMusic/The-Lowlife-Pack" },
+            { "Sponge Fingerz", "MVPMusic/Sponge-Fingerz" },
+            { "Sharpened", "MVPMusic/Sharpened" },
+            { "Hua Lian", "MVPMusic/Hua-Lian" },
+            { "Battlepack", "MVPMusic/Battlepack" },
+            { "Reason", "MVPMusic/Reason" },
+            { "Backbone", "MVPMusic/Backbone" },
+            { "Insurgency", "MVPMusic/Insurgency" },
+            { "Bodacious", "MVPMusic/Bodacious" },
+            { "KOLIBRI", "MVPMusic/KOLIBRI" },
+            { "LNOE", "MVPMusic/Hua-Lian" },
+            { "CHAIN$AW.LXADXUT.", "MVPMusic/chain" },
+            { "King, Scar", "MVPMusic/King-Scar" },
+            { "A*D*8", "MVPMusic/AD8" },
+            { "Metal", "MVPMusic/Metal" },
+            { "II-Headshot", "MVPMusic/II-Headshot" },
+            { "III-Arena", "MVPMusic/III-Arena" },
+            { "Lock Me Up", "MVPMusic/Lock-Me-Up" },
+            { "EZ4ENCE", "MVPMusic/EZ4ENCE" },
+            { "Flashbang Dance", "MVPMusic/Flashbang-Dance" },
+            { "Neo Noir", "MVPMusic/Neo-Noir" },
+            { "M.U.D.D. FORCE", "MVPMusic/MUDD-FORCE" },
+            { "Uber Blasto Phone", "MVPMusic/Uber-Blasto-Phone" },
+            { "Under Bright Lights", "MVPMusic/Under-Bright-Lights" },
+            { "GLA", "MVPMusic/GLA" },
+            { "Hotline Miami", "MVPMusic/Hotline-Miami" },
+            { "Hades", "MVPMusic/Hades" },
+            { "Anti-Citizen", "MVPMusic/Anti-Citizen" },
+            { "The Master Chief", "MVPMusic/The-Master-Chief" },
+            { "Default CS:GO First", "MVPMusic/Default-CSGO" },
+            { "Default CS:GO Second", "MVPMusic/Default2-CSGO" },
+            { "Default CS:GO 2", "MVPMusic/Default-CSGO2" }
         };
         private static Player firstEscaper = null;
         private static Player firstScpKiller = null;
@@ -104,7 +104,7 @@ namespace MVPMusic
             {
                 foreach (var kv in Main.Instance.Config.MusicList)
                 {
-                    if ((kv.Key == "Example Music" && kv.Value == "MVPMusic/example.ogg") || (kv.Key == "Another Example Music" && kv.Value == "MVPMusic/example2.ogg"))
+                    if ((kv.Key == "Example Music" && kv.Value == "MVPMusic/example") || (kv.Key == "Another Example Music" && kv.Value == "MVPMusic/example2"))
                     {
                         continue;
                     }
@@ -232,9 +232,18 @@ namespace MVPMusic
 
             if (mvpPlayer != null)
             {
+                string hint = new string('\n', 4) + Main.Instance.Config.Mvphint
+                    .Replace("{Nickname}", mvpPlayer.Nickname)
+                    .Replace("{Scenario}", Main.Instance.Config.Mvp);
+
+                foreach (var player in Player.List)
+                {
+                    if (!player.IsHost)
+                        player.ShowHint(hint, 10);
+                }
+
                 string musicUrl = GetMusicUrlFromPlayer(mvpPlayer);
-                string botName = Main.Instance.Config.BotName.Replace("{Nickname}", mvpPlayer.Nickname);
-                string command = $"/audio play {musicUrl} {botName}";
+                string command = $"/audio play {musicUrl}";
                 Server.ExecuteCommand(command);
             }
         }
